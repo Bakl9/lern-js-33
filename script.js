@@ -75,3 +75,16 @@ console.log(obj1);
 console.log(obj1.Hello());
 console.log(obj1.obj2);
 console.log(obj1.obj2.speak());
+
+var objReg = {
+    Hello: function() {
+        return this;
+    }
+};
+
+var objArrow = {
+    hello: () => this 
+};
+
+objReg.Hello();
+objArrow.hello();
