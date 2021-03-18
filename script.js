@@ -53,3 +53,25 @@ alert (this.isAdmin);
 // };
 
 // room.intro();
+
+
+var obj1 = {
+    Hello: function() {
+        console.log('Hello world');
+        return this;
+    },
+
+    obj2: {
+        bread: 'dog',
+        speak: function() {
+            console.log('woof!');
+            return this;
+        }
+    }
+};
+
+
+console.log(obj1);
+console.log(obj1.Hello());
+console.log(obj1.obj2);
+console.log(obj1.obj2.speak());
